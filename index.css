@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+
+#header {
+  margin: 0;
+  background: black;
+}
+#header figure {
+  width: 30%;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+}
+#header figure img {
+  height: 100px;
+}
+#header figure h3 {
+  color: white;
+  display: inline-block;
+}
+#header form {
+  text-align: end;
+  display: inline-flex;
+}
+#header form input {
+  width: 280px;
+  height: 30px;
+}
+#header form button {
+  width: 80px;
+  height: 38px;
+  background-color: red;
+  border-color: red;
+}
+
+/* sidebar */
+#sidebar {
+  display: inline-block;
+  background-color: silver;
+  width: 22%;
+}
+#sidebar img {
+  width: 110px;
+}
+#sidebar .shows {
+  display: inline-block;
+}
+#sidebar .shows h4 {
+  color: red;
+}
+#sidebar .shows p {
+  font-family: cambria;
+}
+
+/* Main */
+#main {
+  display: inline-block;
+}
+#main img {
+  width: 50%;
+}
+#main h2 {
+  text-align: center;
+  background-color: red;
+}
+#main p {
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Footer */
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1px;
+}
+#footer div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=index.css.map */
