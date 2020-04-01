@@ -1,10 +1,12 @@
 body {
   margin: 0;
+  padding: 0;
 }
 
 #header {
   margin: 0;
   background: black;
+  height: 100px;
 }
 #header figure {
   width: 30%;
@@ -19,20 +21,28 @@ body {
 #header figure h3 {
   color: white;
   display: inline-block;
+  vertical-align: top;
+  margin-top: 35px;
+  font-weight: lighter;
 }
 #header form {
-  text-align: end;
-  display: inline-flex;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 27px;
+  text-align: right;
+  width: 60%;
 }
 #header form input {
   width: 280px;
   height: 30px;
+  text-align: center;
 }
 #header form button {
   width: 80px;
   height: 38px;
   background-color: red;
   border-color: red;
+  color: white;
 }
 
 /* sidebar */
@@ -40,6 +50,7 @@ body {
   display: inline-block;
   background-color: silver;
   width: 22%;
+  vertical-align: top;
 }
 #sidebar img {
   width: 110px;
@@ -57,17 +68,33 @@ body {
 /* Main */
 #main {
   display: inline-block;
+  max-width: 77.7%;
 }
-#main img {
-  width: 50%;
+#main #img-main {
+  text-align: right;
+  z-index: 1;
 }
-#main h2 {
+#main #img-main img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#main #info-main {
+  z-index: 2;
+  position: relative;
+}
+#main #info-main h2 {
+  font-family: georgia;
+  margin-left: 447px;
+  margin-top: -20px;
   text-align: center;
   background-color: red;
+  width: 140px;
+  padding: 5px;
+  color: white;
 }
-#main p {
+#main #info-main p {
   text-align: center;
-  border: 1px solid black;
 }
 
 /* Footer */
