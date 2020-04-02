@@ -49,7 +49,7 @@ body {
 #sidebar {
   display: inline-block;
   background-color: silver;
-  width: 22%;
+  width: 290px;
   vertical-align: top;
 }
 #sidebar img {
@@ -68,10 +68,13 @@ body {
 /* Main */
 #main {
   display: inline-block;
-  max-width: 77.7%;
+  float: right;
+  max-width: 70%;
+  min-width: 50%;
 }
 #main #img-main {
-  text-align: right;
+  justify-content: right;
+  margin: 0;
   z-index: 1;
 }
 #main #img-main img {
@@ -82,19 +85,19 @@ body {
 #main #info-main {
   z-index: 2;
   position: relative;
+  margin: 0 39% 0;
+  text-align: center;
 }
 #main #info-main h2 {
   font-family: georgia;
-  margin-left: 447px;
   margin-top: -20px;
-  text-align: center;
   background-color: red;
   width: 140px;
-  padding: 5px;
+  padding: 10px 0;
   color: white;
 }
 #main #info-main p {
-  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Footer */
@@ -107,6 +110,86 @@ body {
 #footer div {
   display: flex;
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+  /* header */
+  #header form input {
+    width: 200px;
+  }
+  #header form button {
+    width: 30px;
+    border-radius: 15px;
+  }
+  #header form button strong {
+    display: none;
+  }
+
+  /* sidebar */
+  #sidebar {
+    width: 150px;
+  }
+  #sidebar .options {
+    text-align: center;
+  }
+  #sidebar .options .shows {
+    display: block;
+  }
+  #sidebar .options .shows h4 {
+    margin-top: 0;
+  }
+  #sidebar .options .shows p {
+    display: none;
+  }
+  #sidebar .options img {
+    margin-top: 10px;
+    width: 90px;
+  }
+
+  /* main */
+  #main {
+    width: 100%;
+  }
+  #main #img-main img {
+    width: 100%;
+  }
+  #main #info-main h2 {
+    padding: 0;
+    opacity: 80%;
+    border-radius: 20px;
+  }
+  #main #info-main p {
+    font-size: smaller;
+    border: 2px dotted blue;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 499px) {
+  #header figure h3 {
+    display: none;
+  }
+
+  #sidebar {
+    display: inline;
+    background-color: skyblue;
+    color: goldenrod;
+  }
+  #sidebar .options {
+    background-color: skyblue;
+    height: 40px;
+  }
+  #sidebar .options img {
+    display: none;
+  }
+  #sidebar .options .shows h4 {
+    margin-top: 10px;
+  }
+
+  #main {
+    display: block;
+    float: none;
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

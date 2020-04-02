@@ -48,7 +48,7 @@ body {
 #sidebar {
     display: inline-block;
     background-color: silver;
-    width: 22%;
+    width: 290px;
     vertical-align: top;
     img {
         width: 110px;
@@ -66,9 +66,12 @@ body {
 /* Main */
 #main {
     display: inline-block;
-    max-width:77.7%;
+    float: right;
+    max-width:70%;
+    min-width: 50%;
     #img-main {
-        text-align: right;
+        justify-content: right;
+        margin: 0;
         z-index: 1;
         img {
             width: 100%;
@@ -80,19 +83,18 @@ body {
     #info-main {
         z-index: 2;
         position: relative;
+        margin: 0 39% 0;
+        text-align: center;
         h2 {
             font-family: georgia;
-            margin-left: 447px;
             margin-top: -20px;
-            text-align: center;
             background-color: red;
-            width:140px;
-            padding: 5px;
+            width: 140px;
+            padding: 10px 0;
             color: white;
         }
-        p {
-
-            text-align: center;
+        p{
+            text-transform: uppercase;
         }
     }
 }
@@ -105,5 +107,101 @@ body {
     div {
         display: flex;
         justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* header */
+    #header {
+        form {
+            input {
+                width: 200px;
+            }
+            button {
+                width: 30px;
+                border-radius: 15px;
+                strong {
+                    display: none;
+                }
+            }
+        }
+  
+    }
+    
+    /* sidebar */
+    #sidebar {
+        width:150px;
+        .options{
+            text-align: center;
+            .shows {
+                display: block;
+                h4 {
+                    margin-top: 0;
+                }
+                p {
+                    display: none;
+                }
+            }
+            img {
+                margin-top: 10px;
+                width: 90px;
+            }
+        }
+    }
+    /* main */
+    #main {
+        width: 100%;
+        #img-main{
+            img {
+                width: 100%;
+            }
+        }
+        #info-main {
+            h2 {
+                padding: 0;
+                opacity: 80%;
+                border-radius: 20px;
+            }
+            p {
+                font-size: smaller;
+                border: 2px dotted blue;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    #header {
+        figure {
+            h3 {
+                display: none;
+            }
+
+        }
+    }
+
+    #sidebar {
+        display: inline;
+        background-color: skyblue;
+        color: goldenrod;
+        .options {
+            background-color: skyblue;
+            height: 40px;
+            img {
+                display: none;
+            }
+            .shows {
+                h4 {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+    }
+    #main {
+        display: block;
+        float: none;
+        max-width: 100%;
     }
 }
