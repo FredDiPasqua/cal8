@@ -50,7 +50,22 @@ body {
   display: inline-block;
   background-color: silver;
   width: 290px;
+  height: 500px;
   vertical-align: top;
+}
+#sidebar #side-header {
+  text-align: center;
+}
+#sidebar #side-header h2 {
+  font-family: times New Roman;
+  letter-spacing: 2px;
+  margin: 0;
+}
+#sidebar #side-header h2 i {
+  margin-left: 10px;
+}
+#sidebar #side-header hr {
+  margin-top: 0;
 }
 #sidebar img {
   width: 110px;
@@ -105,7 +120,9 @@ body {
   background-color: black;
   color: white;
   text-align: center;
-  padding: 1px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 #footer div {
   display: flex;
@@ -128,6 +145,9 @@ body {
   /* sidebar */
   #sidebar {
     width: 150px;
+  }
+  #sidebar #side-header h2 {
+    font-size: 18px;
   }
   #sidebar .options {
     text-align: center;
@@ -174,6 +194,13 @@ body {
 
   #sidebar {
     display: inline;
+    background-color: goldenrod;
+  }
+  #sidebar #side-header {
+    background-color: goldenrod;
+  }
+  #sidebar #side-header hr {
+    display: none;
   }
   #sidebar .options {
     height: 40px;
@@ -183,7 +210,7 @@ body {
   }
   #sidebar .options .shows {
     background-color: skyblue;
-    border: 2px solid black;
+    border: 1px solid rgba(0, 0, 255, 0.568);
     border-radius: 15px;
   }
   #sidebar .options .shows h4 {
@@ -195,6 +222,15 @@ body {
     display: block;
     float: none;
     max-width: 100%;
+  }
+
+  #footer {
+    z-index: 3;
+  }
+}
+@media screen and (max-width: 350px) {
+  #header form input {
+    width: 150px;
   }
 }
 @media screen and (min-width: 770px) and (max-width: 968px) {
