@@ -177,23 +177,27 @@ body {
             h3 {
                 display: none;
             }
+        }
+        form {
+            width: 68%;
 
         }
     }
 
     #sidebar {
         display: inline;
-        background-color: skyblue;
-        color: goldenrod;
         .options {
-            background-color: skyblue;
             height: 40px;
             img {
                 display: none;
             }
             .shows {
+                background-color: skyblue;
+                border: 2px solid black;
+                border-radius: 15px;
                 h4 {
                     margin-top: 10px;
+                    color: orangered
                 }
             }
         }

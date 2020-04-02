@@ -168,21 +168,27 @@ body {
   #header figure h3 {
     display: none;
   }
+  #header form {
+    width: 68%;
+  }
 
   #sidebar {
     display: inline;
-    background-color: skyblue;
-    color: goldenrod;
   }
   #sidebar .options {
-    background-color: skyblue;
     height: 40px;
   }
   #sidebar .options img {
     display: none;
   }
+  #sidebar .options .shows {
+    background-color: skyblue;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
   #sidebar .options .shows h4 {
     margin-top: 10px;
+    color: orangered;
   }
 
   #main {
