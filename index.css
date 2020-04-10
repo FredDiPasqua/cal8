@@ -121,12 +121,17 @@ body {
   color: white;
   text-align: center;
   bottom: 0;
-  position: fixed;
+  position: inherit;
   width: 100%;
 }
 #footer div {
   display: flex;
   justify-content: space-evenly;
+}
+#footer div a {
+  color: white;
+  text-decoration: none;
+  align-self: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -227,10 +232,17 @@ body {
   #footer {
     z-index: 3;
   }
+  #footer a {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 350px) {
   #header form input {
     width: 150px;
+  }
+
+  #footer a {
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 770px) and (max-width: 968px) {
