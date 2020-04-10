@@ -1,0 +1,104 @@
+.links {
+    color: orange;
+    font-family: georgia;
+}
+.paises {
+    color:white;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.badge-linkPill {
+    background-color: orange;
+    color: black;
+}
+/* navbar */
+#navbar {
+    background-color: black;
+    height: 110px;
+    z-index: 3;
+    
+    h4 {
+        color:white;
+        font-weight: lighter;
+    }
+    input {
+        width: 285px;
+    }
+}
+/* sidebar */
+#wrapper {
+    display: flex;
+    width: 100%;
+    margin-right: 0;
+    align-items: stretch;
+    #sidebar {
+        min-width: 275px;
+        max-width: 275px;
+        min-height: 77.9vh;
+        background-color: gray;
+        #hrheader {
+            margin-top: 8px;
+        }
+
+        .sidebar-header {
+            color: gainsboro;
+            font-family: 'Times New Roman', Times, serif;
+            h3 {
+                small {
+                    font-size: 18px;
+                }
+            }
+        }
+        h5 {
+            font-size: 18px;
+        }
+        img {
+            object-fit: scale-down;
+        }
+        #opciones {
+            vertical-align: bottom;
+        }
+    }
+    /* main */
+    #main {
+        .carousel-inner {
+            z-index: 1;
+            img {
+                filter: sepia(30%);
+                height: 60vh;
+                object-fit: cover;
+            }
+        }
+        .carousel-control-prev, .carousel-control-next {
+            opacity: 0%;
+        }
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            opacity: 70%;
+        }
+        #info {
+            text-align: center;
+            h2 {
+                margin-top: -30px;
+                z-index: 2;
+                position: relative;
+                opacity: 90%;
+
+            }
+        }
+    }
+}
+/* footer */
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:2px;
+    a {
+        abbr {
+            text-decoration: inherit;
+        }
+        text-decoration: none;
+        color: white;
+    }
+}
